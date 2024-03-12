@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping to new lines */
+  /* overflow-x: auto; Allow horizontal scrolling */
+  /* display: flex; */
+  flex-wrap: wrap;
+  gap: 20px; /* Add space between each row of books */
+}
+
+.book-container {
+  /* flex: 0 0 auto; Prevents containers from growing/shrinking */
+  margin-right: 20px; /* Adjust spacing between books */
+  flex: 0 0 calc(20% - 20px); /* 20% width for each book, considering margin */
+  margin: 10px; /* Margin between books */
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly visible background color for each book container */
+  border-radius: 5px; /* Rounded corners for each book container */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow effect */
+}
+
+.book-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-details {
+  margin-top: 10px;.book-grid {
+    width: 100%;
+  }
+ 
+  .book-container {
+    margin-bottom: 20px; /* Adjust spacing between books */
+    flex: 0 0 calc(20% - 20px); /* 20% width for each book, considering margin */
+    margin: 10px; /* Margin between books */
+  }
+ 
+  .book-container img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .book-details {
+    margin-top: 10px;
+  }
+ 
+  .book-actions button {
+    margin-right: 10px;
+  }
+ 
+}
+
+.book-actions button {
+  margin-right: 10px;
+}
+
+.book-container img {
+  width: 100%;
+  height: auto;
+}
+.header {
+  background-color: #333; /* Change background color of the header */
+  color: white; /* Change text color of the header */
+  padding: 20px;
+}
